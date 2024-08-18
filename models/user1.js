@@ -4,11 +4,13 @@
 //     type: String,
 //     required: true,
 //   },
+//from models/user1.js
 //   email: {
 //     type: String,
 //     required: true,
 //     unique: true,
 //   },
+// what is unique: true
 //   password: {
 //     type: String,
 //     required: true,
