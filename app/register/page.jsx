@@ -25,7 +25,7 @@ export default function RegisterPage() {
       return;
     }
 
-    // const resCheckUser = await fetch("http://localhost:3000/api/usercheck", {
+    // const resCheckUser = await fetch("/api/userCheck", {
     //     method: "POST",
     //     headers: {
     //         "Content-Type": "application/json",
@@ -54,11 +54,11 @@ export default function RegisterPage() {
       const data = await res.json();
 
       if (res.ok) {
-        // const form = e.target;
+        const form = e.target;
         setName("");
         setError("");
         setSuccess("User registration successfully!");
-        // form.reset();
+        form.reset();
       } else {
         setError(data.message || "User registration failed.");
         console.log("User registration failed.")
