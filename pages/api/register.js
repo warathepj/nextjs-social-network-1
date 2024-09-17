@@ -1,7 +1,7 @@
 // pages/api/register.js/
 // app/register/page.jsx call this api
 // add email to pages/api/register.js/
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 import dbConnect from '../../lib/db';
 import User from '../../models/User';
